@@ -29,15 +29,7 @@ The above output corresponds to the 5 unique BST's shown below:
    --Pay attention! The print approach of the main() method of this question in Leetcode is in-first traverse order, and each of the list's element you need to add is the
    root of the tree.
    
-  /**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
+
 class Solution {
     public List<TreeNode> generateTrees(int n) {
         if(n==0) return new ArrayList<>();
