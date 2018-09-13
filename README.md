@@ -8,3 +8,4 @@ sequence | problem
 3        | Longest Substring Without Repeating Character
 4        | Median of Two Sorted Arrays
 5        | Longest Palindromic Substring
+96       | Unique Binary Serach Trees
