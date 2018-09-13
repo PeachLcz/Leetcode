@@ -26,10 +26,18 @@ The above output corresponds to the 5 unique BST's shown below:
    naturally, the subsequence 1...(i-1) on its left side would lay on the left branch of the root, and similarly the right subsequence (i+1)...n lay on the right
    side of the branch of the root. We can construct the subtree from the subsequence recursively. Through the above approach, we could ensure that the BST we constrcut
    are all unique, since they have unique roots.
-   --Pay attention! The print approach of the main() method of this question in Leetcode is in-first traverse order, and each of the list's element you need to add is the
+   --Pay attention! The print approach of the main() method of this question in Leetcode is in-first traverse order, and each element of the list you need to add is the
    root of the tree.
-   
-
+     
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
 class Solution {
     public List<TreeNode> generateTrees(int n) {
         if(n==0) return new ArrayList<>();
