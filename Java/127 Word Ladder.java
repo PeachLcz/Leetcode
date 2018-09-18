@@ -64,3 +64,43 @@ class Solution {
         return 0;
     }
 }
+
+--Improvement: bidirectional BFS:
+class Solution {
+    public int ladderLength(String beginWord, String endWord, List<String> wordList) {
+        Set<String> dict=new HashSet<>(wordList);
+        Set<String> beginSet=new HashSet<>();
+        Set<String> endSet=new HashSet<>();
+        int step=0;
+        if(!dict.contains(endWord))
+            return 0;;
+        beginSet.add(beginWord);
+        endSet.add(endWord);
+        while(!beginSet.isEmpty()&&!endSet.isEmpty()){
+            step++;
+            if(beginSet.size()>endSet.size()){
+                Set<String> temp=beginSet;
+                beginSet=endSet;
+                endSet=temp;
+            }
+            Set<String> temp=new HashSet<>();
+            for(String word:beginSet){
+                for(int i=0;i<word.length();i++){
+                    StringBuffer sb=new StringBuffer(word);
+                    for(char ch='a';ch<='z';ch++){
+                        sb.setCharAt(i,ch);
+                        String newWord=sb.toString();
+                        if(endSet.contains(newWord))
+                            return step+1;
+                        if(!dict.contains(newWord))
+                            continue;
+                        temp.add(newWord);
+                        dict.remove(newWord);
+                    }
+                }
+            }
+            beginSet=temp;
+        }
+        return 0;
+    }
+}
