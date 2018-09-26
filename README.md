@@ -17,3 +17,4 @@ sequence | problem
 143      | Reorder List
 145      | Binary Tree Postorder Traversal
 94       | Binary Tree Inorder Traversal
+146      | LRU Cache
