@@ -18,3 +18,4 @@ sequence | problem
 145      | Binary Tree Postorder Traversal
 94       | Binary Tree Inorder Traversal
 146      | LRU Cache
+149 .    | Max Points on a Line
