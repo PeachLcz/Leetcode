@@ -33,16 +33,6 @@ class DLinkedNode{
     }
 }
 class LRUCache {
-    class DLinkedNode{
-    int key;
-    int value;
-    DLinkedNode pre;
-    DLinkedNode post;
-    public DLinkedNode(int key,int value){
-        this.key=key;
-        this.value=value;
-    }
-}
     private Map<Integer,DLinkedNode> cache;
     private int capacity;
     private DLinkedNode head;
