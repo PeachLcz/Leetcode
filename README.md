@@ -19,3 +19,4 @@ sequence | problem
 94       | Binary Tree Inorder Traversal
 146      | LRU Cache
 149      | Max Points on a Line
+158      | Read N Characters Given Read4 II - Call multiple times
