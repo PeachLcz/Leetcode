@@ -21,3 +21,4 @@ sequence | problem
 149      | Max Points on a Line
 158      | Read N Characters Given Read4 II - Call multiple times
 170      | Two Sum III - Data structure design
+190      | Reverse Bits
