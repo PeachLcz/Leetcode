@@ -22,4 +22,5 @@ sequence | problem
 158      | Read N Characters Given Read4 II - Call multiple times
 170      | Two Sum III - Data structure design
 190      | Reverse Bits
-213       House Robber II
+213      | House Robber II
+214      | Shortest Palindrome
