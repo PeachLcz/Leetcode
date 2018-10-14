@@ -24,3 +24,4 @@ sequence | problem
 190      | Reverse Bits
 213      | House Robber II
 214      | Shortest Palindrome
+220      | Contains Duplicate III
